@@ -107,9 +107,32 @@ console.log(positives)
 console.log(Math.max.apply(null, num));*/
 
 //12.Create a function that will return a Boolean specifying if a number is prime
+/*function isPrime(num){
+    let isPrime = '';
+    for(let i = 2; i <= Math.sqrt(num); i++){
+      if(num % i === 0){
+        isPrime = false;
+      } else {
+        isPrime = true;
+      }
+    }
+    return isPrime;
+  
+  }
+  
+  isPrime(11);*/
+
 
 //13.Calculate the sum of digits of a positive integer number
-
+/*function sumDigits(n) {
+    let sum = 0;
+    while (n) {
+        digit = n % 10;
+        sum += digit;
+        n = (n - digit) / 10;
+    }
+    return sum;
+}*/
 
 //14.Print the first 100 prime numbers
 /*
@@ -135,6 +158,9 @@ function display(n) {
 display(100);*/
 
 //15.Rotate an array to the left 1 position
+/*let arr = [1, 2, 4, 5];
+rotateLeft(arr);*/
+
 
 //16.Reverse an array
 /*const arr1 = [ 1, 2, 3, 4, 5];
@@ -154,7 +180,15 @@ console.log(result);*/
 
 
 //19.Create a function that will receive an array of numbers as argument and will return a new array with distinct elements
+let arr = [5, 10 ,15 ,20, 25, 30, 40];
 
+function getFirstLast(arr) {
+  return arr && arr.length > 1
+    ? [arr[0], arr[arr.length - 1]]
+    : arr 
+}
+
+console.log(getFirstLast(arr));
 
 
  //20.Create a function that will return the number of words in a text
